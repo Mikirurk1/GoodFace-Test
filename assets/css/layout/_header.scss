@@ -1,0 +1,128 @@
+.header {
+  padding: 1.88rem 0;
+
+  .container-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__company {
+    font-family: Supply-Regular, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: var(--pointer);
+
+    img {
+      transition: .3s;
+      height: auto;
+      max-width: 0.875rem;
+
+    }
+
+    &.active {
+      img{
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  .main-nav {
+    font-family: Supply-Regular, sans-serif;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-size: 1.125rem;
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: max-content;
+    z-index: 1000;
+    padding: 1.25rem;
+    background-color: var(--grey);
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .menu-item a, .menu-item span {
+      display: flex;
+      align-items: center;
+
+      img {
+        transition: .4s;
+        width: 0.875rem;
+        height: 0.875rem;
+        margin-left: 0.5rem;
+      }
+
+      &:before {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.75rem;
+      }
+    }
+
+    .menu-item span {
+      color: var(--white-60);
+    }
+
+    .menu-item a {
+      color: var(--white);
+
+      &:hover {
+        img {
+          transform: translateX(5px);
+        }
+      }
+    }
+
+    .menu-item-14 a, .menu-item-14 .soon {
+      &:before {
+        content: url("../svg/menu-about-us.svg");
+
+      }
+    }
+
+    .menu-item-15 a, .menu-item-15 .soon {
+      &:before {
+        content: url("../svg/menu-blog.svg");
+        width: 2.5rem;
+        height: 2.5rem;
+
+      }
+    }
+
+    .menu-item-19 a, .menu-item-19 .soon {
+      &:before {
+        content: url("../svg/menu-partners.svg");
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+
+    .menu-item-17 a, .menu-item-17 .soon {
+      &:before {
+        content: url("../svg/menu-career.svg");
+        width: 2.5rem;
+        height: 2.5rem;
+
+      }
+    }
+
+    .menu-item-18 a, .menu-item-18 .soon {
+      &:before {
+        content: url("../svg/menu-contacts.svg");
+        width: 2.5rem;
+        height: 2.5rem;
+
+      }
+    }
+  }
+
+}
+

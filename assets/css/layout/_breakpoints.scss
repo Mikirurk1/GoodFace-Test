@@ -1,0 +1,234 @@
+@media only screen and (max-width: 1600px) {
+  .header {
+    .main-nav {
+      left: -1.25rem;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1400px) {
+  .footer {
+    padding-bottom: 1.25rem;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    &__subscriber {
+      padding: 7.5rem 1.25rem 8.56rem;
+
+      #input-arrow {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .blog {
+    &__item {
+      &:first-child {
+        grid-column: span 2;
+        overflow: hidden;
+
+        &:hover {
+          .blog__item-body {
+            padding: 2.5rem 1.875rem;
+          }
+        }
+
+        .blog__item-body {
+          padding: 1.875rem;
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          background-color: var(--black-30);
+          backdrop-filter: blur(60px);
+          transition: .3s;
+
+          &-title {
+            max-width: 53rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .blog {
+    padding-bottom: 7.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .blog {
+    &__filter {
+      flex-direction: column;
+      align-items: start;
+      margin-bottom: 3.5rem;
+    }
+
+    &__posts {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__item {
+      gap: 1.25rem;
+
+      &-body {
+        &-title {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .post {
+    padding: 1.25rem 0 7.5rem;
+
+
+    &__title {
+      font-size: 2.5rem;
+      letter-spacing: -0.05rem;
+      margin: 1.25rem 0;
+    }
+
+    &__info {
+      margin-bottom: 3.75rem;
+
+    }
+
+    &__body {
+      padding: 3.75rem 0 7.5rem;
+      font-family: IBMPlexSans-Medium, sans-serif;
+
+
+      h2 {
+        margin: 3.12rem 0;
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.375rem;
+      }
+
+      .count {
+        font-size: 1.375rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+        letter-spacing: 0.03375rem;
+        line-height: 140%;
+        color: var(--white-80);
+      }
+
+
+      video {
+        margin: 3.12rem 0;
+      }
+
+      blockquote {
+        font-size: 1.375rem;
+        margin-top: 3.12rem;
+        padding-left: 1.25rem;
+      }
+    }
+
+    &__similar {
+      &-title {
+        font-size: 2rem;
+        letter-spacing: -0.04rem;
+      }
+
+      .swiper-btn-container{
+        display: none;
+      }
+
+      .swiper {
+        cursor: var(--drag);
+        margin-top: 2.5rem;
+      }
+
+      &-item {
+        gap: 1.25rem;
+
+        &-body {
+
+
+          &-title {
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .swiper-pagination {
+        display: block;
+      }
+
+    }
+  }
+
+  .footer {
+    &__subscriber {
+      &-letter {
+        top: 0.63rem;
+        left: 0.74rem;
+        max-width: 4.5rem;
+        max-height: 4.5rem;
+      }
+
+      &-hello, &-success {
+        bottom: 1.25rem;
+        right: 1.25rem;
+        max-width: 5rem;
+        max-height: 5.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header {
+    padding: 1.5rem 0;
+
+    button {
+      display: none;
+    }
+
+    .container-main {
+      justify-content: center;
+    }
+
+    .main-nav {
+      left: -5.56rem;
+    }
+  }
+  .footer {
+    &__subscriber {
+      min-height: 32.5rem;
+
+      &-title {
+        font-size: 2rem;
+        letter-spacing: -0.04rem;
+        margin-bottom: 1.25rem;
+      }
+
+      &-subtitle {
+        font-size: 1.125rem;
+        letter-spacing: 0.03375rem;
+      }
+
+      form {
+        margin-top: 1.88rem;
+      }
+    }
+  }
+}
+
+

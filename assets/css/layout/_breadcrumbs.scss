@@ -1,0 +1,30 @@
+.breadcrumbs {
+  font-family: Supply-Regular, sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+
+  &__sep {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 0.875rem;
+      height: 0.875rem;
+      margin: 0 0.5rem;
+      filter: invert(100%);
+    }
+  }
+
+  span {
+    opacity: 0.6;
+  }
+
+  a {
+    transition: .2s;
+    &:hover{
+      color: var(--blue);
+    }
+  }
+}
